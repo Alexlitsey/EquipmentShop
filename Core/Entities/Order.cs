@@ -54,7 +54,7 @@ namespace EquipmentShop.Core.Entities
         // Навигационные свойства
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
-        private static string GenerateOrderNumber()
+        public static string GenerateOrderNumber()
         {
             var datePart = DateTime.UtcNow.ToString("yyyyMMdd");
             var randomPart = new Random().Next(10000, 99999);

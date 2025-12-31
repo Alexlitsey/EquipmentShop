@@ -32,5 +32,8 @@ namespace EquipmentShop.Core.Interfaces
     };
         public int VerifiedPurchases { get; set; }
         public int WithImages { get; set; }
+        public int FeaturedReviews { get; set; }
+        public int WithPros { get; set; }
+        public int WithCons { get; set; }
     }
 }
