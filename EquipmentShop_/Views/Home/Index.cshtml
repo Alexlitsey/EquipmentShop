@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="text-center py-5 bg-light rounded-3 mb-4">
+    <h1 class="display-4">Добро пожаловать в EquipmentShop!</h1>
+    <p class="lead">Лучший интернет-магазин компьютерной техники в Беларуси</p>
+    <a asp-controller="Products" asp-action="Index" class="btn btn-primary btn-lg mt-3">
+        <i class="fas fa-shopping-bag"></i> Перейти к покупкам
+    </a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 text-center mb-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <i class="fas fa-shipping-fast fa-3x text-primary mb-3"></i>
+                <h3>Быстрая доставка</h3>
+                <p>Доставка по Минску в течение 24 часов</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+                <h3>Гарантия качества</h3>
+                <p>Гарантия на все товары от 1 года</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <i class="fas fa-headset fa-3x text-info mb-3"></i>
+                <h3>Поддержка 24/7</h3>
+                <p>Круглосуточная поддержка клиентов</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -22,7 +22,7 @@ namespace EquipmentShop.Core.Entities
         // Наличие
         public int StockQuantity { get; set; }
         public int MinStockThreshold { get; set; } = 5;
-        public bool IsAvailable => StockQuantity > 0;
+        public bool IsAvailable { get; set; }
         public bool IsFeatured { get; set; }
         public bool IsNew { get; set; }
         public bool IsOnSale => OldPrice.HasValue;
